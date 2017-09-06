@@ -131,17 +131,27 @@ a:hover {
   font-size: 17px;
   color: #000000;
 }
+.content {
+  display: none;
+}
+.show {
+  display: block;
+  -webkit-animation-duration: 2s;
+}
 .teaching-page-content p {
   margin-bottom: 80px;
 }
 .article-navigation {
-  margin-top: -45px;
   line-height: 30px;
   font-family: 'Noto Serif', serif;
   font-size: 17px;
 }
+.article-navigation ul {
+  margin-top: 0;
+}
 .article-navigation li {
   padding-left: 40px;
+  cursor: pointer;
 }
 .article-navigation .active:before {
   content: "—";
@@ -153,7 +163,7 @@ a:hover {
   color: #888888;
   text-decoration: none;
 }
-.article-navigation li.active a {
+.article-navigation li.active {
   color: #000000;
 }
 .faq {

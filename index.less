@@ -124,12 +124,14 @@ a {
     }
 }
 
+
+
 .page-content {
     background: url(img/350x480.png) no-repeat  100% 0%;
     padding-top: 110px;
     margin-top: 20px;
-     font-size: 20px;
-
+    font-size: 20px;
+   
     h1 {
           font-size: 90px;
           font-family: Cormorant;
@@ -166,6 +168,16 @@ a {
 
 }
 
+.content{
+    display: none;
+}
+
+.show{
+    display: block;
+    -webkit-animation-duration: 2s;
+}
+
+
 .teaching-page-content{
 
     p{
@@ -175,13 +187,18 @@ a {
 }
 
 .article-navigation{
-    margin-top: -45px;
+
     line-height: 30px;
     font-family: 'Noto Serif', serif;
     font-size: 17px;
 
+    ul{
+        margin-top:0;
+    }
+
     li{
         padding-left: 40px;
+        cursor: pointer;
     }
 
     .active:before{
@@ -195,7 +212,7 @@ a {
          color: #888888;
          text-decoration: none;
     }
-    li.active a{
+    li.active{
         color: #000000;
     }
 }
