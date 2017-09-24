@@ -19,6 +19,7 @@ a:hover {
 .main-container {
   margin: 0 auto;
   position: relative;
+  -webkit-animation-duration: 3s;
 }
 .inner-container {
   max-width: 1580px;
@@ -31,7 +32,7 @@ a:hover {
   overflow: hidden;
   padding-top: 20px;
   padding-bottom: 20px;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 6s;
 }
 .main-navigation li {
   display: inline-block;
@@ -124,6 +125,7 @@ a:hover {
   line-height: 24px;
   z-index: 3000;
   line-height: 32px;
+  -webkit-animation-duration: 3.8s;
 }
 .page-content .view-or-buy a {
   margin-right: 10px;
@@ -136,7 +138,7 @@ a:hover {
 }
 .show {
   display: block;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 3s;
 }
 .teaching-page-content p {
   margin-bottom: 80px;
