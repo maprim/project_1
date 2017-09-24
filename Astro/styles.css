@@ -83,23 +83,6 @@ a:hover {
   margin-top: 270px;
   margin-right: 210px;
 }
-.main-content {
-  display: grid;
-  grid-template-columns: 1fr 350px;
-  margin-bottom: 50px;
-  -webkit-animation-duration: 2.8s;
-  -webkit-animation-delay: 0.1s;
-}
-.main-content p {
-  font-family: Roboto;
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 1.56;
-  text-align: left;
-  color: #000000;
-  margin-top: 270px;
-  margin-right: 210px;
-}
 .index-page .main-content {
   background: url("http://via.placeholder.com/350x480") no-repeat 100% 100%;
 }
@@ -195,58 +178,4 @@ a:hover {
 }
 .faq p {
   margin-bottom: 40px;
-}
-.nav-mobile,
-.nav-mobile-toggler {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .nav-mobile-toggler {
-    display: inline-block;
-    width: 50px;
-    background: none;
-    border: none;
-    outline: none;
-    line-height: 10px;
-  }
-  .nav-mobile-toggler span {
-    display: inline-block;
-    height: 4px;
-    margin-bottom: 2px;
-    width: 40px;
-    background: #000000;
-  }
-  .main-navigation {
-    display: block;
-    padding: 10px;
-  }
-  .main-logo {
-    float: right;
-  }
-  .main-navigation-right-side {
-    display: none;
-  }
-  .main-navigation-right-side ul {
-    float: none;
-    padding: 0;
-    margin: 0;
-    padding-top: 20px;
-  }
-  .main-navigation-right-side ul li {
-    display: block;
-    text-align: center;
-    text-transform: uppercase;
-    margin-right: 0;
-    padding: 5px;
-    letter-spacing: 2px;
-    font-weight: 600;
-  }
-  .main-content {
-    display: block;
-    margin-bottom: 50px;
-  }
-  .main-content p {
-    font-size: 22px;
-    margin: 40px 10px 0px 10px;
-  }
 }

@@ -29,6 +29,9 @@ for (var i = 0; i < item.length; i++) {
 window.addEventListener('wheel', scroller);
 
 
+window.addEventListener('wheel', scroller);
+
+
 function scroller(test){
  
  test = window.event;
@@ -62,14 +65,4 @@ function scroller(test){
  }
 
 }
-
-let mobileButton = document.querySelector('.nav-mobile-toggler');
-
     
-    function toggler(){
-        let menuMobile = document.querySelector('.main-navigation-right-side');
-        // menuMobile.style.display.toggle('block');
-        menuMobile.style.display = menuMobile.style.display === 'block' ? '' : 'block';
-    };
-
-    mobileButton.addEventListener('touchstart', toggler, false);
