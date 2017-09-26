@@ -73,3 +73,4 @@ let mobileButton = document.querySelector('.nav-mobile-toggler');
     };
 
     mobileButton.addEventListener('touchstart', toggler, false);
+    
