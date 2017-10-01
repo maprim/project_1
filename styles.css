@@ -2,6 +2,7 @@ html,
 body {
   box-sizing: border-box;
   font-family: Roboto;
+  margin: 0;
 }
 body.teaching-page {
   background: #353535;
@@ -33,6 +34,7 @@ a:hover {
   padding-top: 20px;
   padding-bottom: 20px;
   -webkit-animation-duration: 6s;
+  cursor: pointer;
 }
 .main-navigation li {
   display: inline-block;
@@ -205,7 +207,7 @@ a:hover {
 .mobile-image-container {
   display: none;
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 800px) {
   .nav-mobile-toggler {
     display: inline-block;
     width: 50px;
@@ -213,6 +215,7 @@ a:hover {
     border: none;
     outline: none;
     line-height: 10px;
+    cursor: pointer;
   }
   .nav-mobile-toggler span {
     display: inline-block;
@@ -220,6 +223,10 @@ a:hover {
     margin-bottom: 2px;
     width: 40px;
     background: #000000;
+    cursor: pointer;
+  }
+  .teaching-page .nav-mobile-toggler span {
+    background: #ffffff;
   }
   .main-navigation {
     display: block;
@@ -232,9 +239,11 @@ a:hover {
     display: none;
     position: absolute;
     background: #ffffff;
-    padding-top: 60px;
-    width: 98%;
+    width: 100%;
     height: 100%;
+    top: 50px;
+    left: 0;
+    z-index: 10000;
   }
   .main-navigation-right-side ul {
     float: none;
@@ -250,6 +259,9 @@ a:hover {
     padding: 5px;
     letter-spacing: 2px;
     font-weight: 600;
+  }
+  .teaching-page .main-navigation-right-side {
+    background: #353535;
   }
   li a {
     padding: 15px 0;
@@ -269,21 +281,63 @@ a:hover {
   .main-content p {
     font-size: 22px;
     margin: 40px 10px 0px 10px;
+    z-index: 100;
   }
-}
-.main-content-items article {
-  max-width: 100%;
-  margin: 0;
-  margin-bottom: 20px;
-  text-align: left;
-  line-height: 24px;
-  display: block;
-}
-.mobile-image-container {
-  display: block;
-  max-width: 100%;
-  height: 480px;
-  background: url("img/176902158.jpg") no-repeat;
-  background-size: cover;
-  margin-bottom: 25px;
+  .main-content-items article {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 24px;
+    display: block;
+  }
+  .mobile-image-container {
+    display: block;
+    max-width: 100%;
+    height: 480px;
+    background: url("img/176902158.jpg") no-repeat;
+    background-size: cover;
+    margin-bottom: 25px;
+  }
+  .page-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    background: none;
+    margin-top: 10px;
+  }
+  .page-content h1 {
+    margin-left: 0;
+    font-size: 28px;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+  .page-content p {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .page-content .view-or-buy a {
+    margin-right: 10px;
+    font-family: 'Noto Serif', serif;
+    font-size: 14px;
+  }
+  .page-content .view-or-buy {
+    padding: 0;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 3  px;
+    line-height: 24px;
+    -webkit-animation-duration: 3.8s;
+  }
+  .show {
+    z-index: -100;
+    position: relative;
+  }
+  .article-navigation {
+    margin-top: 10px;
+  }
+  .article-navigation ul {
+    margin-left: 0;
+    padding: 0;
+  }
 }

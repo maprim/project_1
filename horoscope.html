@@ -5,10 +5,11 @@
     <title></title>
     <!-- <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" type="text/css" href="flexboxgrid.css">-->
-    <link rel="stylesheet" type="text/css" href="animate.css"> 
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Cormorant:400,600|Noto+Serif|Roboto:300,400&amp;subset=cyrillic-ext" rel="stylesheet">
-
+    <meta charset="utf-8">    
 </head>
 
 <body>
@@ -16,14 +17,17 @@
         <div class="inner-container ">
             <nav class="main-navigation fadeInDown animated">
                 <div class="main-logo">
-                    <a href="#">Альберт Феррони</a>
+                    <a href="index.html">Альберт Феррони</a>
                 </div>
-                <div class="main-navigation-right-side">
+                <button class="nav-mobile-toggler">
+                    <span></span><span></span><span></span>
+                </button>
+                <div class="main-navigation-right-side mobile">
                     <ul>
                         <li><a href="#">Об астрологе</a></li>
-                        <li><a href="#">Гороскопы</a></li>
+                        <li><a href="horoscope.html">Гороскопы</a></li>
                         <li><a href="#">Консультации</a></li>
-                        <li><a href="#">Обучение</a></li>
+                        <li><a href="teaching.html">Обучение</a></li>
                     </ul>
                 </div>
             </nav>
@@ -109,6 +113,8 @@
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
     </script>
     <script src="index.js"></script>
+    <script src="mobile.js"></script>
+    
 </body>
 
 </html>

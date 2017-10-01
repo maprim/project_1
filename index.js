@@ -63,14 +63,14 @@ function scroller(test){
 
 }
 
-let mobileButton = document.querySelector('.nav-mobile-toggler');
+// let mobileButton = document.querySelector('.nav-mobile-toggler');
 
     
-    function toggler(){
-        let menuMobile = document.querySelector('.main-navigation-right-side');
-        // menuMobile.style.display.toggle('block');
-        menuMobile.style.display = menuMobile.style.display === 'block' ? '' : 'block';
-    };
+//     function toggler(){
+//         let menuMobile = document.querySelector('.main-navigation-right-side');
+//         // menuMobile.style.display.toggle('block');
+//         menuMobile.style.display = menuMobile.style.display === 'block' ? '' : 'block';
+//     };
 
-    mobileButton.addEventListener('touchstart', toggler, false);
+//     mobileButton.addEventListener('touchstart', toggler, false);
     
